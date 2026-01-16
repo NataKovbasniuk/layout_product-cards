@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Product cards</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./src/styles/index.css"
+    />
+  </head>
+  <body>
+    <div
+      class="card"
+      data-qa="card"
+    >
+      <img
+        class="card__img"
+        src="images/imac.jpeg"
+        alt="iMac"
+      />
+      <div class="card__info">
+        <h1 class="card__title">
+          APPLE A1419 iMac 27" Retina 5K Monoblock (MNED2UA/A)
+        </h1>
+        <p class="card__code">Product code: 195434</p>
+      </div>
+      <div class="card__rating">
+        <img
+          src="images/star-active.svg"
+          alt="star"
+        />
+        <img
+          src="images/star-active.svg"
+          alt="star"
+        />
+        <img
+          src="images/star-active.svg"
+          alt="star"
+        />
+        <img
+          src="images/star-active.svg"
+          alt="star"
+        />
+        <img
+          src="images/star.svg"
+          alt="star"
+        />
+        <span class="card__reviews">Reviews:5</span>
+      </div>
+      <div class="card__footer">
+        <p class="card__comment">Price:</p>
+        <span class="card__price">$2,199</span>
+      </div>
+      <button
+        class="button"
+        data-qa="hover"
+      >
+        Buy
+      </button>
+    </div>
+  </body>
+</html>

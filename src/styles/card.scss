@@ -85,6 +85,6 @@
   &:hover {
     background-color: $color-hover;
     color: $color-extra;
-    border-color: $color-extra;
+    border: 1px solid $color-extra;
   }
 }

@@ -2,22 +2,39 @@
   width: $card-width;
   padding: $card-padding;
   border-radius: $card-radius;
+  background-color: #fff;
+  border: 1px solid #f3f3f3;
 
   display: flex;
   flex-direction: column;
   gap: 12px;
 
+  &__img {
+    width: 160px;
+    height: 134px;
+    align-self: center;
+    object-fit: contain;
+  }
+
   &__info {
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
     gap: 12px;
     flex: 1;
   }
 
-  &__img {
-    width: 160px;
-    height: 134px;
+  &__title {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: $color-text;
+  }
+
+  &__code {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    color: $color-text-primary;
   }
 
   &__rating {
@@ -32,20 +49,6 @@
     color: $color-text;
   }
 
-  &__title {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 18px;
-    color: $color-text;
-  }
-
-  &__code {
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 14px;
-    color: $color-text-primary;
-  }
-
   &__footer {
     display: flex;
     align-items: center;
@@ -54,37 +57,44 @@
   }
 
   &__comment {
-    font-weight: 400;
     font-size: 12px;
+    font-weight: 400;
     line-height: 18px;
     color: $color-text-primary;
   }
 
   &__price {
-    font-weight: 700;
     font-size: 16px;
+    font-weight: 700;
     line-height: 18px;
     color: $color-text;
   }
 
   .button {
-    background-color: $color-extra;
-    color: $color-hover;
     width: 166px;
     height: 40px;
+    margin-top: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $color-extra;
+    color: $color-hover;
     border-radius: 5px;
-    font-weight: 700;
+    border: 1px solid $color-extra;
+
     font-size: 14px;
+    font-weight: 700;
     line-height: 16px;
-    border: 1px solid transparent;
-    outline: none;
+    text-decoration: none;
+
     cursor: pointer;
     transition: all 0.2s ease;
-  }
 
-  &:hover {
-    background-color: $color-hover;
-    color: $color-extra;
-    border: 1px solid $color-extra;
+    &:hover {
+      background-color: $color-hover;
+      color: $color-extra;
+    }
   }
 }

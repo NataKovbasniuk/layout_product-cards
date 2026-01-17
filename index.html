@@ -22,7 +22,7 @@
     />
     <link
       rel="stylesheet"
-      href="./src/styles/index.css"
+      href="./src/styles/index.scss"
     />
   </head>
   <body>
@@ -42,27 +42,14 @@
         <p class="card__code">Product code: 195434</p>
       </div>
       <div class="card__rating">
-        <img
-          src="./src/images/star-active.svg"
-          alt="star"
-        />
-        <img
-          src="./src/images/star-active.svg"
-          alt="star"
-        />
-        <img
-          src="./src/images/star-active.svg"
-          alt="star"
-        />
-        <img
-          src="./src/images/star-active.svg"
-          alt="star"
-        />
-        <img
-          src="./src/images/star.svg"
-          alt="star"
-        />
-        <span class="card__reviews">Reviews:5</span>
+        <div class="stars stars--4">
+          <span class="stars__star"></span>
+          <span class="stars__star"></span>
+          <span class="stars__star"></span>
+          <span class="stars__star"></span>
+          <span class="stars__star"></span>
+        </div>
+        <span class="stars__reviews">Reviews:5</span>
       </div>
       <div class="card__footer">
         <p class="card__comment">Price:</p>

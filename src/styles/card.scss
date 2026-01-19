@@ -78,7 +78,6 @@
   .button {
     width: 166px;
     height: 40px;
-    margin-top: 16px;
 
     display: flex;
     align-items: center;
@@ -95,7 +94,7 @@
     text-decoration: none;
 
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: none;
 
     &:hover {
       background-color: $color-hover;

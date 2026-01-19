@@ -78,7 +78,6 @@
 .card .button {
   width: 166px;
   height: 40px;
-  margin-top: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,7 +90,7 @@
   line-height: 16px;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: none;
 }
 
 .card .button:hover {
